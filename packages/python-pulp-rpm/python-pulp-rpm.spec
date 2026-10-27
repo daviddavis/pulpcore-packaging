@@ -6,7 +6,7 @@
 %global src_name pulp_rpm
 
 Name:           python%{python3_pkgversion}-%{pypi_name}
-Version:        3.39.3
+Version:        3.39.4
 Release:        1%{?dist}
 Summary:        RPM plugin for the Pulp Project
 
@@ -31,7 +31,7 @@ Requires:       python%{python3_pkgversion}-importlib-resources >= 6.4.0
 Requires:       python%{python3_pkgversion}-importlib-resources < 6.5
 Requires:       python%{python3_pkgversion}-jsonschema >= 4.6
 Requires:       python%{python3_pkgversion}-jsonschema < 5.0
-Requires:       python%{python3_pkgversion}-productmd >= 1.33
+Requires:       python%{python3_pkgversion}-productmd >= 1.33.0
 Requires:       python%{python3_pkgversion}-productmd < 1.34
 Requires:       python%{python3_pkgversion}-pulpcore >= 3.118.0
 Requires:       python%{python3_pkgversion}-pulpcore < 3.130
@@ -84,6 +84,9 @@ set -ex
 
 
 %changelog
+* Tue Oct 27 12:12:37 UTC 2026 Foreman Packaging Automation <packaging@theforeman.org> - 3.39.4-1
+- Update to 3.39.4
+
 * Thu Oct 22 11:41:27 UTC 2026 Foreman Packaging Automation <packaging@theforeman.org> - 3.39.3-1
 - Update to 3.39.3
 - Keep the productmd minimum at its published 1.33 release version
