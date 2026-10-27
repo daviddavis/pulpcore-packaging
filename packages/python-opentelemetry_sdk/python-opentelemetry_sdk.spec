@@ -3,7 +3,7 @@
 %global pypi_name opentelemetry_sdk
 
 Name:           python%{python3_pkgversion}-%{pypi_name}
-Version:        1.44.0
+Version:        1.45.1
 Release:        1%{?dist}
 Summary:        OpenTelemetry Python SDK
 
@@ -19,8 +19,8 @@ BuildRequires:  python%{python3_pkgversion}-pip
 BuildRequires:  python%{python3_pkgversion}-hatchling
 BuildRequires:  python%{python3_pkgversion}-tomli
 
-Requires:       python%{python3_pkgversion}-opentelemetry_api == 1.44.0
-Requires:       python%{python3_pkgversion}-opentelemetry_semantic_conventions == 0.65b0
+Requires:       python%{python3_pkgversion}-opentelemetry_api == 1.45.1
+Requires:       python%{python3_pkgversion}-opentelemetry_semantic_conventions == 0.66b1
 Requires:       python%{python3_pkgversion}-typing-extensions >= 4.5.0
 
 %{?python_provide:%python_provide python%{python3_pkgversion}-%{pypi_name}}
@@ -50,6 +50,9 @@ set -ex
 %{python3_sitelib}/%{pypi_name}-%{version}.dist-info/
 
 %changelog
+* Tue Oct 27 12:23:24 UTC 2026 Foreman Packaging Automation <packaging@theforeman.org> - 1.45.1-1
+- Update to 1.45.1
+
 * Fri Sep 18 14:13:24 UTC 2026 Foreman Packaging Automation <packaging@theforeman.org> - 1.44.0-1
 - Update to 1.44.0
 
