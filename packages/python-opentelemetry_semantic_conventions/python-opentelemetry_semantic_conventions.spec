@@ -3,7 +3,7 @@
 %global pypi_name opentelemetry_semantic_conventions
 
 Name:           python%{python3_pkgversion}-%{pypi_name}
-Version:        0.65b0
+Version:        0.66b1
 Release:        1%{?dist}
 Summary:        OpenTelemetry Semantic Conventions
 
@@ -18,7 +18,7 @@ BuildRequires:  python%{python3_pkgversion}-devel
 BuildRequires:  python%{python3_pkgversion}-pip
 BuildRequires:  python%{python3_pkgversion}-hatchling
 BuildRequires:  python%{python3_pkgversion}-tomli
-Requires:       python%{python3_pkgversion}-opentelemetry-api == 1.44.0
+Requires:       python%{python3_pkgversion}-opentelemetry-api == 1.45.1
 Requires:       python%{python3_pkgversion}-typing-extensions >= 4.5.0
 
 %{?python_provide:%python_provide python%{python3_pkgversion}-%{pypi_name}}
@@ -50,6 +50,9 @@ set -ex
 
 
 %changelog
+* Tue Oct 27 12:23:16 UTC 2026 Foreman Packaging Automation <packaging@theforeman.org> - 0.66b1-1
+- Update to 0.66b1
+
 * Fri Sep 18 14:13:28 UTC 2026 Foreman Packaging Automation <packaging@theforeman.org> - 0.65b0-1
 - Update to 0.65b0
 
